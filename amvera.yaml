@@ -1,3 +1,2 @@
 meta:
-  environment: static
-  toolchain: html
+  toolchain: static
