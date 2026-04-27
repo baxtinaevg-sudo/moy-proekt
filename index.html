@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бахтина Евгения Константиновна — Портфолио</title>
+  <style>
+    :root {
+      --primary: #1F4E79;
+      --accent: #2E75B6;
+      --dark: #333333;
+      --gray: #666666;
+      --light-gray: #999999;
+      --bg-light: #F2F7FB;
+      --white: #FFFFFF;
+      --section-line: #2E75B6;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', 'Calibri', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--dark);
+      line-height: 1.6;
+      background: var(--bg-light);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      color: var(--white);
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+
+    .hero h1 { font-size: 2.4rem; margin-bottom: 12px; letter-spacing: 0.5px; }
+    .hero .subtitle { font-size: 1.15rem; opacity: 0.9; margin-bottom: 20px; }
+
+    .hero .contacts {
+      font-size: 0.95rem; opacity: 0.85;
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
+    }
+
+    .hero .contacts a {
+      color: var(--white); text-decoration: none; transition: opacity 0.2s;
+    }
+    .hero .contacts a:hover { opacity: 1; text-decoration: underline; }
+
+    .container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+    .section {
+      background: var(--white); border-radius: 12px;
+      padding: 36px 40px; margin: -30px 20px 30px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.06); position: relative;
+    }
+
+    .section-title {
+      font-size: 1.3rem; color: var(--primary);
+      text-transform: uppercase; letter-spacing: 1px;
+      padding-bottom: 12px; margin-bottom: 20px;
+      border-bottom: 3px solid var(--section-line);
+    }
+
+    .about-text { font-size: 1rem; line-height: 1.75; color: var(--dark); }
+
+    .job { margin-bottom: 32px; }
+    .job:last-child { margin-bottom: 0; }
+
+    .job-header {
+      display: flex; justify-content: space-between;
+      align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 4px;
+    }
+
+    .job-company { font-size: 1.1rem; font-weight: 700; color: var(--dark); }
+    .job-company a { color: var(--accent); text-decoration: none; font-weight: 400; font-size: 0.9rem; }
+    .job-company a:hover { text-decoration: underline; }
+    .job-period { font-size: 0.85rem; color: var(--light-gray); white-space: nowrap; }
+    .job-role { font-size: 0.95rem; color: var(--accent); font-style: italic; font-weight: 600; margin-bottom: 10px; }
+
+    .job ul { list-style: none; padding-left: 0; }
+    .job ul li { padding: 3px 0 3px 20px; position: relative; font-size: 0.92rem; color: var(--dark); }
+    .job ul li::before {
+      content: "•"; color: var(--accent); font-weight: bold; position: absolute; left: 0;
+    }
+
+    .job-separator { border: none; border-top: 1px dashed #ddd; margin: 24px 0; }
+
+    .edu-item { margin-bottom: 16px; }
+    .edu-item:last-child { margin-bottom: 0; }
+    .edu-title { font-weight: 700; font-size: 1rem; }
+    .edu-detail { font-size: 0.9rem; color: var(--gray); }
+
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+    .skill-card {
+      background: var(--bg-light); border-radius: 8px;
+      padding: 14px 18px; border-left: 4px solid var(--accent);
+    }
+
+    .skill-card .skill-cat {
+      font-weight: 700; color: var(--primary); font-size: 0.85rem;
+      text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;
+    }
+    .skill-card .skill-list { font-size: 0.9rem; color: var(--dark); }
+
+    .langs { display: flex; gap: 30px; font-size: 1rem; }
+    .langs span { display: flex; align-items: center; gap: 8px; }
+
+    footer {
+      text-align: center; padding: 30px 20px;
+      font-size: 0.85rem; color: var(--light-gray);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.7rem; }
+      .hero .contacts { flex-direction: column; gap: 8px; }
+      .section { padding: 24px 20px; margin-left: 10px; margin-right: 10px; }
+      .job-header { flex-direction: column; }
+      .skills-grid { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      .hero { padding: 40px 20px 30px; }
+      .section { box-shadow: none; border: 1px solid #eee; margin-left: 0; margin-right: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Бахтина Евгения Константиновна</h1>
+    <p class="subtitle">Технический менеджер · Продакт-менеджер · Руководитель лаборатории</p>
+    <div class="contacts">
+      <span>📍 Жуковский, Россия</span>
+      <span>📱 +7 (915) 152-19-88</span>
+      <a href="mailto:baxtina.evg@yandex.ru">✉️ baxtina.evg@yandex.ru</a>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="section">
+      <h2 class="section-title">Обо мне</h2>
+      <p class="about-text">
+        Технический менеджер и продакт-менеджер с <strong>10+ годами опыта</strong> в отрасли строительных материалов.
+        Экспертиза охватывает полный цикл — от разработки и производства до вывода продукта на рынок.
+        Успешный опыт руководства лабораторией, совместных R&D проектов с клиентами и формирования стратегии
+        продуктовых линеек. Сочетаю глубокие технические знания (химия, материаловедение) с бизнес-образованием
+        (РАНХиГС, коммерческий директор). В настоящее время обучаюсь в аспирантуре МГСУ по специальности
+        «Материаловедение».
+      </p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Опыт работы — 10 лет 2 месяца</h2>
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-company">ООО «Полипласт Новомосковск» <a href="https://polyplast-un.ru/" target="_blank">polyplast-un.ru</a></div>
+          <div class="job-period">Март 2023 — Октябрь 2025</div>
+        </div>
+        <div class="job-role">Технический менеджер / Продакт-менеджер · 2 года 7 месяцев</div>
+        <ul>
+          <li>Разработала и вывела на рынок новые продукты в категории сухих строительных смесей и добавок</li>
+          <li>Провела совместные R&D тестирования с клиентами, что привело к заключению новых контрактов</li>
+          <li>Осуществляла косвенные продажи, обеспечив рост выручки продуктового направления</li>
+          <li>Сформировала и внедрила стратегию продуктовой линейки</li>
+          <li>Провела бенчмаркинг конкурентов, улучшены технические характеристики продуктов</li>
+          <li>Улучшила и стандартизировала процесс контроля качества (УТП продукта)</li>
+          <li>Составила технические карты и описания продуктов для производства и коммерческого отдела</li>
+        </ul>
+      </div>
+
+      <hr class="job-separator">
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-company">ООО «Качественные смеси» · dauer.ru</div>
+          <div class="job-period">Декабрь 2018 — Июнь 2021</div>
+        </div>
+        <div class="job-role">Начальник лаборатории · 2 года 7 месяцев</div>
+        <ul>
+          <li>Руководила лабораторией, обеспечив 100% соответствие выпускаемой продукции требованиям ГОСТ</li>
+          <li>Организовала входной контроль сырья, сократив количество брака</li>
+          <li>Разработала новые продукты и оптимизировала текущие рецептуры, снизив себестоимость</li>
+          <li>Внедрила документацию согласно НД, прошла аудиты без замечаний</li>
+          <li>Оптимизировала технологические процессы, сократив потери при производстве</li>
+          <li>Составила нормы расхода сырья и рассчитала себестоимость продуктовых линеек</li>
+        </ul>
+      </div>
+
+      <hr class="job-separator">
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-company">ООО «Качественные смеси» · dauer.ru</div>
+          <div class="job-period">Апрель 2018 — Декабрь 2018</div>
+        </div>
+        <div class="job-role">Технолог (повышение до начальника лаборатории) · 9 месяцев</div>
+        <ul>
+          <li>Внедрила производственный контроль на всех этапах производства</li>
+          <li>Разработала новые виды продукции и улучшила текущие рецептуры</li>
+          <li>Контролировала качество входящего сырья и готовой продукции</li>
+          <li>Работала в системе 1С:Производство</li>
+        </ul>
+      </div>
+
+      <hr class="job-separator">
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-company">ООО «Dauer» · Жуковский, <a href="https://dauer.ru" target="_blank">dauer.ru</a></div>
+          <div class="job-period">Июнь 2017 — Март 2018</div>
+        </div>
+        <div class="job-role">Инженер-технолог · 10 месяцев</div>
+        <ul>
+          <li>Разработала этапы технологического процесса для новых продуктов</li>
+          <li>Внедрила систему контроля продукции на этапах производства, повысив качество</li>
+          <li>Получила предложение о повышении в ООО «Качественные смеси» (связанная компания)</li>
+        </ul>
+      </div>
+
+      <hr class="job-separator">
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-company">ИП Бахтина Е.К. · Жуковский</div>
+          <div class="job-period">Январь 2015 — Сентябрь 2017</div>
+        </div>
+        <div class="job-role">Индивидуальный предприниматель · 2 года 9 месяцев</div>
+        <ul>
+          <li>Управляла бизнесом по оптовой и розничной торговле пищевыми продуктами</li>
+          <li>Самостоятельно вела закупки, логистику, продажи и финансовый учёт</li>
+          <li>Получила ценный опыт ведения бизнеса «с нуля», управления cash flow и работы с поставщиками</li>
+        </ul>
+      </div>
+
+      <hr class="job-separator">
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-company">«Компания Аркада-Строй» · Жуковский</div>
+          <div class="job-period">Июнь 2009 — Январь 2015</div>
+        </div>
+        <div class="job-role">Технолог · 5 лет 8 месяцев</div>
+        <ul>
+          <li>Контролировала качество и учёт сырья на производстве строительных материалов</li>
+          <li>Разработала технологические процессы для новых видов продукции</li>
+          <li>Внедрила контроль качества на всех этапах производства</li>
+          <li>Освоила систему 1С:Производство для учёта сырья и готовой продукции</li>
+        </ul>
+      </div>
+
+      <hr class="job-separator">
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-company">ООО «Компания Гарантия-Строй» · Жуковский</div>
+          <div class="job-period">Июль 2008 — Июнь 2009</div>
+        </div>
+        <div class="job-role">Инженер-технолог · 1 год</div>
+        <ul>
+          <li>Первое место работы после окончания ВУЗа с дипломом с отличием</li>
+          <li>Освоила полный цикл производственного контроля качества</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Образование</h2>
+      <div class="edu-item">
+        <div class="edu-title">МГСУ — Аспирантура (в процессе)</div>
+        <div class="edu-detail">2024–2028 · Материаловедение · Роль: преподаватель-исследователь</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-title">ИБДА РАНХиГС — Профпереподготовка</div>
+        <div class="edu-detail">2021–2022 · Институт бизнеса и делового администрирования · «Коммерческий директор»</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-title">ДГТУ (НПИ) — Диплом с отличием</div>
+        <div class="edu-detail">2008 · Химический, кафедра ХВВНиСМ</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Ключевые навыки</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-cat">Управление</div>
+          <div class="skill-list">Руководство коллективом, управление проектами, стратегическое планирование</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-cat">Производство</div>
+          <div class="skill-list">Производственный контроль, контроль качества, технология производства СМ</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-cat">Продукт</div>
+          <div class="skill-list">Разработка новых продуктов, бенчмаркинг, технические карты</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-cat">Рынок</div>
+          <div class="skill-list">Сухие строительные смеси, добавки для ССС, керамика</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-cat">Инструменты</div>
+          <div class="skill-list">1С:Производство, R&D процессы, ГОСТ/НД</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-cat">Продажи</div>
+          <div class="skill-list">Косвенные продажи, клиентоориентированность, B2C</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Языки</h2>
+      <div class="langs">
+        <span>🇷🇺 <strong>Русский</strong> — родной</span>
+        <span>🇬🇧 <strong>Английский</strong> — B1</span>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Бахтина Евгения Константиновна · <a href="mailto:baxtina.evg@yandex.ru">baxtina.evg@yandex.ru</a></p>
+    <p style="margin-top: 8px;">Рекомендации доступны по запросу</p>
+  </footer>
+
+</body>
+</html>
+</task_progress>
+</write_to_file>
