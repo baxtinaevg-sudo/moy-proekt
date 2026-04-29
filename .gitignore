@@ -16,5 +16,9 @@ Desktop.ini
 # Cline
 .cline/
 
+# Personal documents
+Резюме_*
+Сопроводительное_*
+
 # Embedded git repos
 _audit_bulletproof/
